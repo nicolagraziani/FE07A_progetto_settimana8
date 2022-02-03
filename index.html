@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/iphone.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="iphone">
+            <div class="iphone-top">
+              <span class="camera"></span>
+              <span class="sensor"></span>
+              <span class="speaker"></span>
+            </div>
+            <div class="top-bar"></div>
+
+            <div class="iphone-screen">
+
+                <div id="homePage">
+                    <ul id="nav">
+                        <li><button class="app" id="ricaricaBtn"><i class="fas fa-money-bill-wave"></i></button></li>
+                        <li><button class="app" id="chiamataBtn"><i class="fas fa-phone-alt"></i></button></li>
+                        <li><button class="app" id="creditoBtn"><i class="fas fa-wallet"></i></button></li>
+                    </ul>
+                </div>
+
+                <div id="ricaricaPage">
+                    <p>Seleziona l'importo della tua ricarica</p>
+                    <select name="ricarica" id="ricaricaSel">
+                        <option value="5">5€</option>
+                        <option value="10" selected>10€</option>
+                        <option value="20">20€</option>
+                        <option value="50">50€</option>
+                    </select>
+                    <p id="ricaricaP">La tua ricarica è andata a buon fine!</p>
+                    <button id="ricaricaOk">Ricarica ora!</button>
+                </div>
+
+                <div id="chiamataPage">
+                    <div id="callLogContainer">
+                        <ul id="callLog">
+                        </ul>
+                    </div>
+                    <button id="chiamaBtn">Chiama!</button>
+                    <button id="resetBtn">Reset</button>
+
+                </div>
+
+                <div id="creditoPage">
+                    <p>Il tuo credito residuo è: </p>
+                    <h3 id="creditoP">0 €</h3>
+                </div>
+
+            </div>
+            
+            <div class="buttons">
+              <span class="on-off"></span>
+              <span class="sleep"></span>
+              <span class="up"></span>
+              <span class="down"></span>
+            </div>
+            <div class="bottom-bar"></div>
+            <div class="iphone-bottom">
+              <span id="homeBtn"></span>
+            </div>
+          </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
